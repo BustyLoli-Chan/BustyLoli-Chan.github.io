@@ -104,6 +104,12 @@ WMTU.setup = function(){
   WMTU.streamInfoUpdateLoop();
 };
 
+WMTU.loadMain = function(){
+	$("#loader").load("pages/main.html");
+	//do button things
+};
+
 $(document).ready(function(){
   WMTU.setup();
+  WMTU.loadMain();
 });
