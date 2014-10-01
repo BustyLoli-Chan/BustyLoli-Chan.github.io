@@ -106,7 +106,6 @@ WMTU.setup = function(){
 
 WMTU.loadMain = function(){
 	$("#loader").load("pages/main.html");
-	//do button things
 };
 
 $(document).ready(function(){

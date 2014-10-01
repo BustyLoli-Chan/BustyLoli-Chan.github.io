@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
     <title>WMTU 91.9 FM</title>
-    <link rel="stylesheet" type="text/css" href="bower_components/colors/css/colors.min.css"/>
-    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" type="text/css" href="bower_components/pickadate/lib/themes/classic.css"/>
-    <link rel="stylesheet" type="text/css" href="bower_components/pickadate/lib/themes/classic.date.css"/>
-    <link rel="stylesheet" type="text/css" href="bower_components/pickadate/lib/themes/classic.time.css"/>
-    <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
-    <link rel="stylesheet" type="text/css" href="css/background-fade.css"/>
-    <link rel="stylesheet" type="text/css" href="css/btns.css"/>
-    <link rel="stylesheet" type="text/css" href="css/flexbox.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/colors/css/colors.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/pickadate/lib/themes/classic.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/pickadate/lib/themes/classic.date.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/pickadate/lib/themes/classic.time.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/background-fade.css" />
+    <link rel="stylesheet" type="text/css" href="css/btns.css" />
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/soundmanager/script/soundmanager2.js"></script>
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
@@ -23,39 +25,34 @@
     <header>
       <img id="top-logo" class="pulsate-bg zoom" src="images/wmtu-logo.svg" alt="WMTU" />
     </header>
-    <main>
-      <div id="stream">
-        <div id="player">
-          <span id="play-button"><i class="fa fa-play"></i></span>
-          <span id="pause-button"><i class="fa fa-pause"></i></span>
-        </div>
-        <div id="music-info">
-          <span id="current-track"></span>
-        </div>
+	<main>
+    <div id="stream">
+      <div id="player">
+      <span id="play-button"></span> 
+      <span id="pause-button"></span></div>
+      <div id="music-info">
+        <span id="current-track"></span>
       </div>
-      <div class="divider"></div>
-      <div id="navigation" class="flex">
-        <span class="spacer"></span>
-        <a href="/archives/" target="_blank" class="btn item">Archives</a>
-        <span class="spacer"></span>
-        <a href="/forum" class="btn item" target="_blank" onclick="return confirm('Warning! The views expressed herein are those of the posters, and not necessarily those of WMTU, its staff, underwriters, or Michigan Technological University.')">Forum</a>
-        <span class="spacer"></span>
-        <a href="station-documents.html" target="_blank" class="btn item">Station Documents</a>
-        <span class="spacer"></span>
-      </div>
-      <div class="divider"></div>
-      <div id="loader" >page</div>
-    </main>
+    </div>
+    <div class="divider"></div>
+    <div id="navigation" class="flex">
+		<a href="/archives/" id="b1" class="btn item">Archives</a> 
+		<a href="/forum" class="btn item" id="b2"
+		onclick="return confirm(&#39;Warning! The views expressed herein are those of the posters, and not necessarily those of WMTU, its staff, underwriters, or Michigan Technological University.&#39;)">
+		Forum</a> 
+		<a href="station-documents.html" class="btn item">Station Documents</a></div>
+    <div class="divider"></div>
+    <div id="loader">page</div>
+	</main>
     <footer class="flex">
       <div class="item">
-        <img id="ape-footer" src="images/ape-logo.svg" alt="WMTU Ape" width="100px" height="100px"/>
+        <img id="ape-footer" src="images/ape-logo.svg" alt="WMTU Ape" width="100px" height="100px" />
       </div>
-      <div class="item">
-        WMTU is funded by the Undergraduate Student Government of Michigan Technological University.<br>
-        WMTU's bandwidth provided by Resnet<br>
-        &#169; WMTU 91.9FM Houghton | Michigan Technological University 2014<br>
-      </div>
+      <div class="item">WMTU is funded by the Undergraduate Student Government of Michigan Technological University.
+      <br />WMTU&#39;s bandwidth provided by Resnet
+      <br />© WMTU 91.9FM Houghton | Michigan Technological University 2014
+      <br /></div>
     </footer>
-    <a href="#" id="scrolltotop"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" id="scrolltotop"></a>
   </body>
 </html>

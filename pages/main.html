@@ -1,4 +1,30 @@
 <html>
+<head>
+<script type="text/javascript" >
+	$(document).ready(function(){
+		$("#b1").text("Archives");
+		$("#b2").text("Forum");
+		$("#b3").text("Station Documents");
+	});
+
+	$( "#b1" ).click(function(event) {
+		event.preventDefault();
+		
+		$("#loader").load("pages/main.html");
+	});
+	
+	$( "#b2" ).click(function(event) {
+		event.preventDefault();
+		$("#loader").load("pages/main.html");
+	});
+	
+	$( "#b3" ).click(function(event) {
+		event.preventDefault();
+		$("#loader").load("pages/station-documents.html");
+	});
+</script>
+</head>
+
 <div id="onair">
 <h2>On Air Camera</h2>
 <img alt="Moving Image Stream" src="http://webcams.mtu.edu/webcam24/imgupdate.cgi">
