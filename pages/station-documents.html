@@ -11,17 +11,25 @@
 	$( "#b1" ).click(function(event) {
 		event.preventDefault();
 		
-		$("#loader").load("pages/main.html");
+		$('html, body').animate({
+			scrollTop: $("#constitution").offset().top
+		}, 1000);
 	});
 	
 	$( "#b2" ).click(function(event) {
 		event.preventDefault();
-		$("#loader").load("pages/main.html");
+		
+		$('html, body').animate({
+			scrollTop: $("#by-laws").offset().top
+		}, 1000);
 	});
 	
 	$( "#b3" ).click(function(event) {
 		event.preventDefault();
-		$("#loader").load("pages/main.html");
+		
+		$('html, body').animate({
+			scrollTop: $("#dj-training-guide").offset().top
+		}, 1000);
 	});
 </script>
 </head>

@@ -109,6 +109,11 @@ WMTU.loadMain = function(){
 };
 
 $(document).ready(function(){
-  WMTU.setup();
-  WMTU.loadMain();
+	WMTU.setup();
+	WMTU.loadMain();
+
+	$("#top-logo").click(function(event) {
+		event.preventDefault();
+		WMTU.loadMain();
+	});
 });
