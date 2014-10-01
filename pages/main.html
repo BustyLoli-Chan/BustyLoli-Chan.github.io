@@ -15,7 +15,11 @@
 	
 	$( "#b2" ).click(function(event) {
 		event.preventDefault();
-		$("#loader").load("pages/main.html");
+		
+		if (confirm('Warning! The views expressed herein are those of the posters, and not necessarily those of WMTU, its staff, underwriters, or Michigan Technological University.')) {
+			//proceed to forum
+			
+		}
 	});
 	
 	$( "#b3" ).click(function(event) {
