@@ -8,6 +8,12 @@
 		$("#b3").text("DJ Training Guide");
 	});
 
+	//unbind all previous button events
+	$( "#b1" ).unbind();
+	$( "#b2" ).unbind();
+	$( "#b3" ).unbind();
+	
+	//bind new events specific to page
 	$( "#b1" ).click(function(event) {
 		event.preventDefault();
 		
