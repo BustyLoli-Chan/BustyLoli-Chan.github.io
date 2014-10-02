@@ -3,8 +3,19 @@
 <script type="text/javascript" >
 	$(document).ready(function(){
 		$("#b1").text("Archives");
-		$("#b2").text("Forum");
-		$("#b3").text("Station Documents");
+		$("#b2").text("Station Documents");
+		$("#b3").text("Forum");
+		
+		//bind playlist and date picker
+		WMTU.datePicker = $('#playlist-date').pickadate().pickadate('picker');
+
+		if(WMTU.datePicker){
+			WMTU.datePicker.on({
+				close: WMTU.handleDatePickerEvent
+			});
+		}
+  
+		$("#playlist-table").hide();
 	});
 
 	//unbind all previous button events
@@ -22,15 +33,16 @@
 	$( "#b2" ).click(function(event) {
 		event.preventDefault();
 		
-		if (confirm('Warning! The views expressed herein are those of the posters, and not necessarily those of WMTU, its staff, underwriters, or Michigan Technological University.')) {
-			//proceed to forum
-			
-		}
+		//proceed to archive
 	});
 	
 	$( "#b3" ).click(function(event) {
 		event.preventDefault();
-		$("#loader").load("pages/station-documents.html");
+		
+		if (confirm('Warning! The views expressed herein are those of the posters, and not necessarily those of WMTU, its staff, underwriters, or Michigan Technological University.')) {
+			//proceed to forum
+			
+		}
 	});
 </script>
 </head>

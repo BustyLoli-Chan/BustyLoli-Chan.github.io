@@ -73,16 +73,6 @@ WMTU.bindThings = function(){
     WMTU.streamObject.pause();
   });
 
-  WMTU.datePicker = $('#playlist-date').pickadate().pickadate('picker');
-
-  if(WMTU.datePicker){
-    WMTU.datePicker.on({
-      close: WMTU.handleDatePickerEvent
-    });
-  }
-  
-  $("#playlist-table").hide();
-
   $(window).scroll(function() {
     if ($(this).scrollTop() > 150 && $(this).scrollTop() < 250){
       $("#scrolltotop").css('visibility', 'visible');
