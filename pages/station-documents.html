@@ -6,36 +6,38 @@
 		$("#b1").text("Constitution");
 		$("#b2").text("By Laws");
 		$("#b3").text("DJ Training Guide");
-	});
+	
 
-	//unbind all previous button events
-	$( "#b1" ).unbind();
-	$( "#b2" ).unbind();
-	$( "#b3" ).unbind();
-	
-	//bind new events specific to page
-	$( "#b1" ).click(function(event) {
-		event.preventDefault();
+		//unbind all previous button events
+		$( "#b1" ).unbind();
+		$( "#b2" ).unbind();
+		$( "#b3" ).unbind();
 		
-		$('html, body').animate({
-			scrollTop: $("#constitution").offset().top
-		}, 1000);
-	});
-	
-	$( "#b2" ).click(function(event) {
-		event.preventDefault();
+		//bind new events specific to page
+		$( "#b1" ).click(function(event) {
+			event.preventDefault();
+			
+			$('html, body').animate({
+				scrollTop: $("#constitution").offset().top
+			}, 1000);
+		});
 		
-		$('html, body').animate({
-			scrollTop: $("#by-laws").offset().top
-		}, 1000);
-	});
-	
-	$( "#b3" ).click(function(event) {
-		event.preventDefault();
+		$( "#b2" ).click(function(event) {
+			event.preventDefault();
+			
+			$('html, body').animate({
+				scrollTop: $("#by-laws").offset().top
+			}, 1000);
+		});
 		
-		$('html, body').animate({
-			scrollTop: $("#dj-training-guide").offset().top
-		}, 1000);
+		$( "#b3" ).click(function(event) {
+			event.preventDefault();
+			
+			$('html, body').animate({
+				scrollTop: $("#dj-training-guide").offset().top
+			}, 1000);
+		});
+	
 	});
 </script>
 </head>
