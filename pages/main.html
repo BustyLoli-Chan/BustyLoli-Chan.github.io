@@ -16,35 +16,37 @@
 		}
   
 		$("#playlist-table").hide();
-	});
+	
 
-	//unbind all previous button events
-	$( "#b1" ).unbind();
-	$( "#b2" ).unbind();
-	$( "#b3" ).unbind();
+		//unbind all previous button events
+		$( "#b1" ).unbind();
+		$( "#b2" ).unbind();
+		$( "#b3" ).unbind();
 	
-	//bind new events specific to page
-	$( "#b1" ).click(function(event) {
-		event.preventDefault();
-		
-		//proceed to archive
-	});
-	
-	$( "#b2" ).click(function(event) {
-		event.preventDefault();
-		
-		//load station documents
-		$("#loader").load("pages/station-documents.html");
-	});
-	
-	$( "#b3" ).click(function(event) {
-		event.preventDefault();
-		
-		if (confirm('Warning! The views expressed herein are those of the posters, and not necessarily those of WMTU, its staff, underwriters, or Michigan Technological University.')) {
-			//proceed to forum
+		//bind new events specific to page
+		$( "#b1" ).click(function(event) {
+			event.preventDefault();
 			
-		}
+			//proceed to archive
+		});
+		
+		$( "#b2" ).click(function(event) {
+			event.preventDefault();
+			
+			//load station documents
+			$("#loader").load("pages/station-documents.html");
+		});
+		
+		$( "#b3" ).click(function(event) {
+			event.preventDefault();
+			
+			if (confirm('Warning! The views expressed herein are those of the posters, and not necessarily those of WMTU, its staff, underwriters, or Michigan Technological University.')) {
+				//proceed to forum
+				
+			}
+		});
 	});
+	
 </script>
 </head>
 
